@@ -1,0 +1,22 @@
+[gd_resource type="AnimatedTexture" load_steps=3 format=2]
+
+[sub_resource type="OpenSimplexNoise" id=1]
+seed = -3
+octaves = 6
+period = 256.0
+persistence = 0.432
+lacunarity = 1.61
+
+[sub_resource type="NoiseTexture" id=2]
+noise = SubResource( 1 )
+
+[resource]
+flags = 7
+frames = 4
+frame_0/texture = SubResource( 2 )
+frame_1/texture = SubResource( 2 )
+frame_1/delay_sec = 0.0
+frame_2/texture = SubResource( 2 )
+frame_2/delay_sec = 0.0
+frame_3/texture = SubResource( 2 )
+frame_3/delay_sec = 0.0
